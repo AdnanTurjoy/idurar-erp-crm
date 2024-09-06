@@ -20,6 +20,7 @@ import { useParams } from 'react-router-dom';
 export default function Settings() {
   const translate = useLanguage();
   const { settingsKey } = useParams();
+  console.log(settingsKey, "settingsKey")
   const content = [
     {
       key: 'general_settings',

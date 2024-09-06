@@ -11,7 +11,7 @@ export default function AppRouter() {
   let location = useLocation();
   const { state: stateApp, appContextAction } = useAppContext();
   const { app } = appContextAction;
-
+  console.log(appContextAction);
   const routesList = [];
 
   Object.entries(routes).forEach(([key, value]) => {
